@@ -34,10 +34,10 @@ func2('d', obj2) //False
 // Задание 3.
 // Написать функцию, которая создает пустой объект, но без прототипа.
 
-function createObj(){
-}
+function emptyObj (){
+  return Object.create(null); 
+} 
 
-const obj3 = new createObj();
-
-console.log(obj3)
+let exampleObj = emptyObj();
+console.log(exampleObj)
 
